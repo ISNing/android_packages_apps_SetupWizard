@@ -38,4 +38,8 @@ include frameworks/opt/setupwizard/library/common-gingerbread.mk
 
 include $(BUILD_PACKAGE)
 
+include $(LOCAL_PATH)/Studio.mk
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+

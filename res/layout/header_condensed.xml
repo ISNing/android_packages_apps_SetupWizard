@@ -26,12 +26,12 @@
         android:id="@+id/header_icon"
         android:layout_width="64dp"
         android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
-        android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:visibility="gone"
-        android:contentDescription="@null" />
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="match_parent"
