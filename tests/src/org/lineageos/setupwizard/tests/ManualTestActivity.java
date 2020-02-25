@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.setupwizard.tests;
+package org.exthmui.setupwizard.tests;
 
 
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DEFAULT;
@@ -73,7 +73,7 @@ public class ManualTestActivity extends Activity {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 0);
             final Intent intent = new Intent("android.intent.action.MAIN");
             intent.addCategory("android.intent.category.HOME");
-            resetComponentSets("org.lineageos.setupwizard", GET_ACTIVITIES |
+            resetComponentSets("org.exthmui.setupwizard", GET_ACTIVITIES |
                     GET_RECEIVERS | GET_SERVICES | MATCH_DISABLED_COMPONENTS);
             resetComponentSets("com.google.android.setupwizard", GET_ACTIVITIES |
                     GET_RECEIVERS | GET_SERVICES | MATCH_DISABLED_COMPONENTS);
@@ -109,7 +109,7 @@ public class ManualTestActivity extends Activity {
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
-        disableComponentSets("org.lineageos.setupwizard",  GET_ACTIVITIES |
+        disableComponentSets("org.exthmui.setupwizard",  GET_ACTIVITIES |
                 GET_RECEIVERS | GET_SERVICES);
         try {
             disableComponentSets("com.google.android.setupwizard",  GET_ACTIVITIES |

@@ -17,7 +17,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
-          package="org.lineageos.setupwizard"
+          package="org.exthmui.setupwizard"
           android:versionCode="5"
           android:sharedUserId="android.uid.system">
 
@@ -49,7 +49,7 @@
         android:name="lineageos.permission.FINISH_SETUP"
         android:protectionLevel="signatureOrSystem" />
 
-    <protected-broadcast android:name="org.lineageos.setupwizard.SETUP_FINISHED"
+    <protected-broadcast android:name="org.exthmui.setupwizard.SETUP_FINISHED"
                          android:permission="lineageos.permission.FINISH_SETUP"/>
 
     <application android:label="@string/app_name"
@@ -57,12 +57,12 @@
                  android:theme="@style/Theme.Setup"
                  android:uiOptions="none"
                  android:taskAffinity="com.android.wizard"
-                 android:name=".SetupWizardApp">
+                 android:name="org.exthmui.setupwizard.SetupWizardApp">
 
 
         <activity android:theme="@style/NoDisplay"
                   android:label="@string/activity_label_empty"
-                  android:name=".wizardmanager.WizardManager"
+                  android:name="org.exthmui.setupwizard.wizardmanager.WizardManager"
                   android:enabled="false"
                   android:exported="false"
                   android:excludeFromRecents="true"
@@ -75,7 +75,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SetupWizardActivity"
+        <activity android:name="org.exthmui.setupwizard.SetupWizardActivity"
                   android:label="@string/activity_label_empty"
                   android:lockTaskMode="normal"
                   android:launchMode="singleTask"
@@ -93,7 +93,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".BluetoothSetupActivity"
+        <activity android:name="org.exthmui.setupwizard.BluetoothSetupActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -105,7 +105,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".WelcomeActivity"
+        <activity android:name="org.exthmui.setupwizard.WelcomeActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -117,7 +117,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LocaleActivity"
+        <activity android:name="org.exthmui.setupwizard.LocaleActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -129,7 +129,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DateTimeActivity"
+        <activity android:name="org.exthmui.setupwizard.DateTimeActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -141,7 +141,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".WifiSetupActivity"
+        <activity android:name="org.exthmui.setupwizard.WifiSetupActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -154,7 +154,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CaptivePortalSetupActivity"
+        <activity android:name="org.exthmui.setupwizard.CaptivePortalSetupActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -167,7 +167,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SimMissingActivity"
+        <activity android:name="org.exthmui.setupwizard.SimMissingActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -180,7 +180,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ChooseDataSimActivity"
+        <activity android:name="org.exthmui.setupwizard.ChooseDataSimActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -193,7 +193,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MobileDataActivity"
+        <activity android:name="org.exthmui.setupwizard.MobileDataActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -206,7 +206,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LocationSettingsActivity"
+        <activity android:name="org.exthmui.setupwizard.LocationSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -219,7 +219,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LineageSettingsActivity"
+        <activity android:name="org.exthmui.setupwizard.LineageSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -231,7 +231,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FingerprintActivity"
+        <activity android:name="org.exthmui.setupwizard.FingerprintActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -244,7 +244,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ScreenLockActivity"
+        <activity android:name="org.exthmui.setupwizard.ScreenLockActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -257,7 +257,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FinishActivity"
+        <activity android:name="org.exthmui.setupwizard.FinishActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -269,7 +269,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SetupWizardExitActivity"
+        <activity android:name="org.exthmui.setupwizard.SetupWizardExitActivity"
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
                   android:excludeFromRecents="true"
                   android:immersive="true"
@@ -281,7 +281,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SetupWizardTestActivity"
+        <activity android:name="org.exthmui.setupwizard.SetupWizardTestActivity"
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
                   android:exported="false"
                   android:immersive="true"
@@ -289,13 +289,13 @@
                   android:launchMode="singleInstance"
                   android:theme="@style/NoDisplay"/>
 
-        <receiver android:name=".PartnerReceiver">
+        <receiver android:name="org.exthmui.setupwizard.PartnerReceiver">
             <intent-filter>
                 <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".SetupWizardExitService"
+        <service android:name="org.exthmui.setupwizard.SetupWizardExitService"
                  android:exported="false"/>
     </application>
 </manifest>
